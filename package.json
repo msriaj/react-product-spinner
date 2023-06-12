@@ -2,7 +2,7 @@
   "name": "react-product-spinner",
   "version": "1.0.0",
   "description": "A customizable product spinner component for React",
-  "main": "dist/ReactProductSpinner.js",
+  "main": "dist/ReactProductSpinner.jsx",
   "scripts": {
     "build": "webpack --mode=production",
     "start": "webpack serve --mode=development"
