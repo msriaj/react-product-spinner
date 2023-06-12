@@ -9,10 +9,11 @@ A customizable product spinner component for React.
 
 ```bash
 npm install react-product-spinner
-
+```
 
 #Usage
 
+```
 import ReactProductSpinner from 'react-product-spinner';
 
 // Example usage
@@ -25,32 +26,31 @@ function App() {
     </div>
   );
 }
-
+```
 
 Props
-Name	Type	Required	Default Value	Description
-images	Array	Yes	-	An array of image source paths for the spinner.
-infinite	Boolean	No	true	Determines if the spinner loops infinitely.
-speed	Number	No	3	The speed of the spinner animation.
-mouseWheel	Boolean	No	false	Enables spinning using the mouse wheel.
-slider	Boolean	No	false	Enables a slider control for image selection.
-sliderClass	String	No	""	Custom CSS class name for the slider component.
-animation	Boolean	No	false	Enables smooth animation between images.
+Name Type Required Default Value Description
+images Array Yes - An array of image source paths for the spinner.
+infinite Boolean No true Determines if the spinner loops infinitely.
+speed Number No 3 The speed of the spinner animation.
+mouseWheel Boolean No false Enables spinning using the mouse wheel.
+slider Boolean No false Enables a slider control for image selection.
+sliderClass String No "" Custom CSS class name for the slider component.
+animation Boolean No false Enables smooth animation between images.
 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contributing
+#Contributing
 Contributions are welcome! Please refer to the Contributing Guidelines for more information.
 
-Issues
+#Issues
 Report any issues or feature requests on the Issues page.
 
-Changelog
+#Changelog
 See the Changelog file for details on version history and updates.
 
 Credits
-Your Name - Author
-```
+MD RIAJ
 
 Ensure to replace the placeholder URLs, such as the npm package version badge, license badge, repository links, and author links, with the appropriate URLs specific to your package.
 
