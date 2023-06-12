@@ -1,8 +1,6 @@
 // ReactProductSpinner.jsx
 
 import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
-import preloadImages from "./preloadImages";
 
 const ReactProductSpinner = ({
   images,
@@ -31,6 +29,20 @@ const ReactProductSpinner = ({
   });
   const [animationRequestID, setAnimationRequestID] = useState(0);
   const [lastPosition, setLastPosition] = useState(0);
+
+  const preloadImages = (srcs) => {
+    const loadImage = (src) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = img.onabort = () => reject(src);
+        img.src = src;
+      });
+    };
+
+    const promises = srcs.map((src) => loadImage(src));
+    return Promise.all(promises);
+  };
 
   useEffect(() => {
     handlePreload();
@@ -249,16 +261,6 @@ const ReactProductSpinner = ({
       )}
     </picture>
   );
-};
-
-ReactProductSpinner.propTypes = {
-  images: PropTypes.array.isRequired,
-  infinite: PropTypes.bool,
-  speed: PropTypes.number,
-  mouseWheel: PropTypes.bool,
-  slider: PropTypes.bool,
-  sliderClass: PropTypes.string,
-  animation: PropTypes.bool,
 };
 
 export default ReactProductSpinner;
