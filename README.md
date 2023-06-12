@@ -7,6 +7,10 @@
 
 A customizable product spinner component for React.
 
+# Live Demo
+
+https://react-product-spinner.netlify.app
+
 ## Installation
 
 ```bash
@@ -55,16 +59,20 @@ function App() {
 
 This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE.md) file for details.
 
-#Contributing
+# Contributing
+
 Contributions are welcome! Please refer to the Contributing Guidelines for more information.
 
-#Issues
+# Issues
+
 Report any issues or feature requests on the Issues page.
 
-#Changelog
+# Changelog
+
 See the Changelog file for details on version history and updates.
 
-Credits
+# Credits
+
 https://github.com/micheleriva/vue-product-spinner/ --(micheleriva)
 
 Ensure to replace the placeholder URLs, such as the npm package version badge, license badge, repository links, and author links, with the appropriate URLs specific to your package.
